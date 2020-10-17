@@ -13,7 +13,7 @@ module.exports = {
             } else {
                 const embed = new Discord.MessageEmbed();
                 embed.setTitle(`کد ورود به گیم برای چنل ${channelname}`)
-                    .addField('___', `${code}` )
+                    .addField('___','```txt$ `${code}` $```')
                     .setColor('#1abc9c');
                 const senderChannel = message.member.voice.channel.name;
                 const sender = message.author;
@@ -26,6 +26,7 @@ module.exports = {
                 }
             }
         }else{
+            message.delete();
             message.reply('ابتدا در چنل جوین شوید');
         }
 
