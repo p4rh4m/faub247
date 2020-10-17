@@ -8,7 +8,6 @@ module.exports = {
         const sender = message.author;
         message.channel.send(`:loud_sound: ${senderChannel} [${sender}]`);
         if (message.member.voice.channel) {
-            message.delete();
             count = true;
             let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
             for (const [memberID, member] of channel.members) {
