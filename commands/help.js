@@ -14,7 +14,7 @@ module.exports = {
             .addField('$d یا $developer','مشاهده برنامه نویس',)
             .addField('$dm','برای گرفتن لینک دعوت کردن بات به سرور شخصیتان',)
             .addField('نکته مهم','کسانی میتوانند از دستورات بات استفاده کنند که رنکشان در سرور قابلیت Move Members داشته باشد',)
-            .addField('among-us-bot@v2.0.0',':white_check_mark: :white_check_mark: :white_check_mark: ')
+            .addField('among-us-bot@v2.0.0',':white_check_mark: ||https://discord.gg/4sNYeU|| :white_check_mark: ')
             .setColor('#f1c40f');
         message.reply('راهنمای بات برای شما ارسال شد');
         message.author.send(embed);
