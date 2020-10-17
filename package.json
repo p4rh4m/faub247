@@ -1,0 +1,17 @@
+{
+  "name": "amongus-bot",
+  "version": "1.0.0",
+  "description": "first persian bot for amongus game",
+  "main": "main.js",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js"
+  },
+  "author": "p4rh4m",
+  "license": "ISC"
+}
