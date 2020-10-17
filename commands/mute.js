@@ -10,6 +10,7 @@ module.exports = {
                         message.channel.send(`:shushing_face: ${senderChannel} [${sender}]`);
 
                         if (message.member.voice.channel) {
+                                message.delete();
                                 let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
                                 for (const [memberID, member] of channel.members) {
                                         // I added the following if statement to mute everyone but the invoker:
