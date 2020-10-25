@@ -20,11 +20,6 @@ module.exports = {
                     maxAge:86400,
                     number : 1,
                 }).catch(console.error);
-                console.log(invite.maxAge);
-                console.log(invite.expiresAt);
-                console.log(invite.guild.name);
-                console.log(invite.inviter);
-                console.log(invite.temporary);
                 if(args.length>0){
                     let id = args[0].replace(/[\\<>@#&!]/g, "");
                     try {
