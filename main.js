@@ -54,6 +54,8 @@ client.on('message',async message=>{
             client.commands.get('back').execute(client,message,args);
         }else if(CMD_NAME === 'invite' || CMD_NAME === 'inv'){
             client.commands.get('invite').execute(client,message,args);
+        }else if(CMD_NAME === 'all'){
+            client.commands.get('all').execute(client,message,args);
         }
 
     }
