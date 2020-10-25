@@ -5,7 +5,7 @@ embed.setTitle('دعوت کردن بات به سرور شخصی')
     .addField('لینک دعوت کردن بات به سرور شخصی',' https://discord.com/oauth2/authorize?client_id=766247914254893116&scope=bot&permissions=8')
     .addField('چگونه بات را دعوت کنم ؟','برای دعوت کردن بات به سرور کافی است از لینک بالا کمک بگیرید توجه داشته باشید برای دعوت کردن بات حتما باید رنک Moderator داشته باشید')
     .addField('درصورت داشتن هرگونه سوال و یا انتقاد','P4rh4m#4648')
-    .addField('among-us-bot@v3.0.1',':white_check_mark: ||https://discord.gg/uT55g5|| :white_check_mark: ')
+    .addField('among-us-bot@v3.0.1',':white_check_mark: ||https://discord.gg/uahdUrF|| :white_check_mark: ')
     .setColor('RED');
 module.exports = {
     name : 'dm',

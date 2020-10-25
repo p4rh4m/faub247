@@ -8,7 +8,7 @@ module.exports = {
             .setImage('https://cdn.dribbble.com/users/1551609/screenshots/6681276/snakedev-dribbble.png')
             .addField(':computer:','این بات را صرفا برای حرفه ای تر کردن فضای بازی شما عزیزان طراحی کرده ام',)
             .addField('ساخته شده با :heart:  توسط p4rh4m',':arrow_up: :arrow_up: :arrow_up: ',)
-            .addField('among-us-bot@v3.0.1','https://discord.gg/uT55g5')
+            .addField('among-us-bot@v3.0.1','https://discord.gg/uahdUrF')
             .setColor('#2ecc71');
         message.author.send(embed);
     }
