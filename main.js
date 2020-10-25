@@ -38,8 +38,22 @@ client.on('message',async message=>{
             client.commands.get('dm').execute(client,message,args);
         }else if(CMD_NAME === 'd' || CMD_NAME === 'developer'){
             client.commands.get('creator').execute(client,message,args);
-        }else if(CMD_NAME === 'code' || CMD_NAME === 'c'){
-            client.commands.get('code').execute(client,message,args);
+        }else if(CMD_NAME === 'code' || CMD_NAME === 'c') {
+            client.commands.get('code').execute(client, message, args);
+        }else if(CMD_NAME === 'a'){
+            client.commands.get('analyse').execute(client,message,args);
+        }else if(CMD_NAME === 'lock'){
+            client.commands.get('lock').execute(client,message,args);
+        }else if(CMD_NAME === 'unlock'){
+            client.commands.get('unlock').execute(client,message,args);
+        }else if(CMD_NAME === 'manage'){
+            client.commands.get('createRole').execute(client,message,args);
+        }else if(CMD_NAME === 'to'){
+            client.commands.get('direct').execute(client,message,args);
+        }else if(CMD_NAME === 'back'){
+            client.commands.get('back').execute(client,message,args);
+        }else if(CMD_NAME === 'invite' || CMD_NAME === 'inv'){
+            client.commands.get('invite').execute(client,message,args);
         }
 
     }

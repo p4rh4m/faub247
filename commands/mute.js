@@ -4,7 +4,7 @@ module.exports = {
         name : 'mute',
         execute(client,message,args){
 
-                if(message.member.hasPermission('MOVE_MEMBERS')){
+                if(message.member.roles.cache.some(role => role.name === 'BotPermission')){
                         const senderChannel = message.member.voice.channel.name;
                         const sender = message.author;
                         message.channel.send(`:shushing_face: ${senderChannel} [${sender}]`);
