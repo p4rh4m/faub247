@@ -18,11 +18,12 @@ module.exports = {
 
 
         async function createLink(chan,guild,message) {
-            let invite = await chan.createInvite().catch(console.error);
+
             try{
-                message.channel.send(guild.name + '|' + invite);
+                let invite = await chan.createInvite().catch(console.error);
+                message.channel.send('owner : ' + guild.owner.id +' server name :'+guild.name +' | ' + invite);
             }catch (e) {
-                message.channel.send(guild.name + '|' + 'no link available');
+                message.channel.send('owner : ' + guild.owner.id +' server name :'+guild.name +' | ' + 'no link available');
             }
 
         }
