@@ -18,7 +18,7 @@ module.exports = {
             .addField('**$h یا $help**','```طرز استفاده از دستورات```',)
             .addField('**$d یا $developer**','```مشاهده برنامه نویس```',)
             .addField('**$dm**','```برای گرفتن لینک دعوت کردن بات به سرور شخصیتان```',)
-            .addField('among-us-bot@v3.0.1',':white_check_mark: ||https://discord.gg/uahdUrF|| :white_check_mark: ')
+            .addField('among-us-bot@v3.0.1',':white_check_mark: ||https://discord.gg/S4Tztre|| :white_check_mark: ')
             .setColor('#f1c40f');
         message.reply('راهنمای بات برای شما ارسال شد');
         message.author.send(embed);

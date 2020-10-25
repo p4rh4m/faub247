@@ -16,9 +16,7 @@ module.exports = {
             }
             async function replyWithInvite(channel,args) {
                 let invite = await channel.createInvite({
-                    unique:true,
-                    maxAge:86400,
-                    number : 1,
+                    maxAge:300,
                 }).catch(console.error);
                 if(args.length>0){
                     let id = args[0].replace(/[\\<>@#&!]/g, "");
