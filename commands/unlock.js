@@ -7,14 +7,10 @@ module.exports = {
         if(message.member.roles.cache.some(role => role.name === 'BotPermission')){
             if(message.member.voice.channel){
                 let channel = message.guild.channels.cache.get(message.member.voice.channel.id);
-                channel.updateOverwrite(channel.guild.roles.everyone, { CONNECT: true });
-                message.channel.send(channel.name + ' : unlocked 🔓');
-                if(channel.name.indexOf('🔒') != -1){
-                    let name  = channel.name.split('🔒');
-                    changeName(channel,message,name);
-                }else{
-                    message.channel.send(channel.name + ' : unlocked 🔓');
-                }
+
+                unlock(channel);
+
+
             }else{
                 //join first err
                 message.reply('ابتدا وارد چنل شوید.')
@@ -25,8 +21,22 @@ module.exports = {
         }
 
         async function changeName(channel,msg,name) {
-            await channel.setName(name[0]).then(channel => console.log(`Channel's new name is ${channel.name}`)).catch(console.error);
+            await channel.setName(name[0]).catch(console.error);
             return ;
+        }
+
+        async function unlock(channel){
+            try {
+                await channel.updateOverwrite(channel.guild.roles.everyone, { CONNECT: true });
+                message.channel.send(channel.name + ' : unlocked 🔓');
+                if(channel.name.indexOf('🔒') != -1){
+                    let name  = channel.name.split('🔒');
+                    changeName(channel,message,name);
+                }
+            }catch (e) {
+                console.log('E : '+e);
+                message.reply('نتونسم چنل رو باز کنم دوباره تلاش کنید');
+            }
         }
 
     }
